@@ -1,0 +1,73 @@
+/* All common code is here */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Work Sans", sans-serif;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.word-color {
+  color: #ff42a5;
+}
+/* All common code is here */
+
+/* Header section style here */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 37px 240px;
+}
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.nav-logo h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+nav ul {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+.follow-us {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 24px;
+  border-radius: 8px;
+  background: rgba(11, 2, 35, 0.1);
+}
+.fa-youtube {
+  margin-left: 20px;
+  margin-right: 16px;
+}
+/* Header section style here */
+
+/* Responsive style here */
+@media screen and (max-width: 576px) {
+  /* Responsive nav */
+  nav {
+    flex-direction: column;
+    justify-content: center;
+    padding: 37px 240px;
+  }
+  nav ul {
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 62px;
+  }
+  .follow-us {
+    width: 262px;
+    margin-top: 62px;
+  }
+  /* Responsive nav */
+}
+/* Responsive style here */
