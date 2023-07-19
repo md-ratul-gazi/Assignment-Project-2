@@ -14,9 +14,13 @@ a {
 .word-color {
   color: #ff42a5;
 }
+img {
+  width: 100%;
+}
 /* All common code is here */
 
 /* Header section style here */
+/* Nav section style here */
 nav {
   display: flex;
   align-items: center;
@@ -56,6 +60,67 @@ nav ul li {
   margin-left: 20px;
   margin-right: 16px;
 }
+/* Nav section style here */
+
+/* Banner section style here */
+.banner {
+  display: flex;
+  gap: 68px;
+}
+.banner-container {
+  background-image: url("../images/Group\ 14.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 148px 309px 148px 244px;
+}
+.banner-content {
+  width: 100%;
+}
+.banner-content h3 {
+  color: #0b0223;
+  font-size: 3rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.banner-content h2 {
+  font-size: 5.9rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.banner-content ul li {
+  color: #534c64;
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-bottom: 17px;
+}
+.banner-content ul li i {
+  margin-right: 12px;
+}
+.banner-button {
+  display: flex;
+  gap: 24px;
+}
+.banner-btn-1,
+.banner-btn-2 {
+  border-radius: 48px;
+  background: #4ec5f7;
+  padding: 21px 40px;
+  border: none;
+  margin-top: 25px;
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.banner-btn-2 {
+  background-color: #ff42a5;
+}
+/* Banner section style here */
 /* Header section style here */
 
 /* Responsive style here */
