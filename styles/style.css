@@ -29,6 +29,7 @@ nav {
   gap: 20px;
 }
 .nav-logo h1 {
+  color: #0b0223;
   font-size: 2.8rem;
   font-weight: 700;
 }
@@ -36,6 +37,12 @@ nav ul {
   display: flex;
   gap: 32px;
   align-items: center;
+}
+nav ul li {
+  color: #3c354f;
+  text-align: center;
+  font-size: 1.12rem;
+  font-weight: 500;
 }
 .follow-us {
   display: flex;
@@ -57,16 +64,16 @@ nav ul {
   nav {
     flex-direction: column;
     justify-content: center;
-    padding: 37px 240px;
+    padding: 78px 300px;
   }
   nav ul {
     flex-direction: column;
     justify-content: center;
-    margin-top: 62px;
+    margin-top: 32px;
   }
   .follow-us {
     width: 262px;
-    margin-top: 62px;
+    margin-top: 22px;
   }
   /* Responsive nav */
 }
