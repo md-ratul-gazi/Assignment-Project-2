@@ -433,7 +433,7 @@ small {
   .play-instantly {
     display: flex;
     gap: 265px;
-    padding: 110px 230px 0px 419px;
+    padding: 70px 230px 0px 419px;
   }
   .play-instantly-content {
     width: 345px;
