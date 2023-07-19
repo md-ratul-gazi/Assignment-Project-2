@@ -2,6 +2,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   font-family: "Work Sans", sans-serif;
 }
 ul {
@@ -120,8 +121,116 @@ nav ul li {
 .banner-btn-2 {
   background-color: #ff42a5;
 }
+
 /* Banner section style here */
 /* Header section style here */
+
+/* Main section style here */
+/* Funny videos section style here */
+.funny-videos {
+  padding: 2rem;
+}
+.funny-videos h3 {
+  text-align: center;
+  color: #0b0223;
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+.funny-videos .description {
+  text-align: center;
+  color: #534c64;
+  font-size: 0.6rem;
+  font-weight: 400;
+  line-height: 30px;
+  margin-bottom: 45px;
+}
+.videos {
+  padding: 0rem 1.5rem;
+}
+.card {
+  padding-top: 0.8rem;
+  padding-bottom: 1.5rem;
+}
+.image-description {
+  margin-top: 33px;
+  color: #534c64;
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: 500;
+  line-height: 30px;
+}
+/* Funny videos section style here */
+
+/* Play instantly style here */
+.play-instantly {
+  text-align: center;
+  padding: 0rem 5rem;
+}
+.play-instantly h3 {
+  color: #0b0223;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 40px;
+  margin-bottom: 1.5rem;
+}
+.play-instantly p {
+  color: #534c64;
+  font-size: 0.7rem;
+  font-weight: 400;
+  line-height: 15px;
+  margin-bottom: 50px;
+}
+
+.image-1 {
+  width: 300px;
+  height: 330px;
+}
+.image-2 {
+  position: relative;
+  bottom: 100px;
+  right: 130px;
+  width: 120px;
+  height: 130px;
+}
+/* Play instantly style here */
+
+/* More games section here */
+.more-games {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* display: flex;
+  flex-wrap: wrap; */
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 2rem;
+}
+.games {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  border: none;
+  border-radius: 50px;
+  background: #fff;
+}
+.games:hover {
+  border: 1px solid #ff42a5;
+}
+.games:hover h4 {
+  color: #ff42a5;
+}
+.games-image {
+  width: 30px;
+  height: 30px;
+}
+.games h4 {
+  color: #0b0223;
+  font-size: 0.7rem;
+  font-weight: 600;
+}
+/* More games section here */
+/* Main section style here */
 
 /* Responsive style here */
 @media screen and (max-width: 576px) {
@@ -129,11 +238,13 @@ nav ul li {
   nav {
     flex-direction: column;
     justify-content: center;
-    padding: 78px 300px;
+    align-items: center;
+    padding: 50px 100px;
   }
   nav ul {
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     margin-top: 32px;
   }
   .follow-us {
@@ -141,5 +252,120 @@ nav ul li {
     margin-top: 22px;
   }
   /* Responsive nav */
+
+  /* Responsive banner */
+  .banner {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    background-size: cover;
+  }
+  .banner-container {
+    width: 100%;
+    /* height: 100%; */
+    background-size: 500px;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background-clip: content-box; */
+    background-size: cover;
+    padding: 30px;
+  }
+
+  .banner-container h3 {
+    font-size: 1.5rem;
+  }
+  .banner-container h2 {
+    font-size: 3.9rem;
+  }
+  .banner-btn-1,
+  .banner-btn-2 {
+    padding: 11px 20px;
+    margin-top: 15px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  .banner-image {
+    width: 100%;
+    text-align: center;
+  }
+  /* Responsive banner */
 }
+
+/* Responsive for Desktop */
+@media screen and (min-width: 992px) {
+  /* Responsive funny videos section */
+  .funny-videos h3 {
+    font-size: 3rem;
+  }
+  .funny-videos .description {
+    font-size: 1.24rem;
+  }
+  .card {
+    width: 342px;
+  }
+  .videos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+  }
+  .image-description {
+    height: 60px;
+    font-size: 20px;
+  }
+  /* Responsive funny videos section */
+
+  /* Responsive play instantly section */
+  .play-instantly {
+    display: flex;
+    gap: 265px;
+    /* justify-content: center; */
+    padding: 110px 230px 0px 419px;
+  }
+  .play-instantly-content {
+    width: 345px;
+    text-align: right;
+  }
+  .play-instantly-content h3 {
+    font-size: 3rem;
+    line-height: 60px;
+  }
+  .play-instantly-content p {
+    font-size: 1.25rem;
+    line-height: 30px;
+  }
+  .image-1 {
+    width: 634px;
+    height: 650px;
+  }
+  .image-2 {
+    width: 318px;
+    height: 365px;
+    position: relative;
+    bottom: 250px;
+    right: 300px;
+  }
+  /* Responsive play instantly section */
+
+  /* Responsive more game section */
+  .more-games {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap:50px;
+    padding:  0rem 10rem;
+  }
+  .games img {
+    width: 60px;
+    height: 60px;
+  }
+  .games h4{
+    font-size: 20px;
+  }
+  /* Responsive more game section */
+}
+/* Responsive for Desktop */
 /* Responsive style here */
